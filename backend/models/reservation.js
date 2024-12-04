@@ -17,8 +17,8 @@ const reservationSchema = new mongoose.Schema ({
     type: Date,
     required: true
   },
-  status: {
-    type: Boolean,
+  createdAt: {
+    type: Date,
     required: true
   }
 })

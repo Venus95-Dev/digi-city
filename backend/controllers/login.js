@@ -24,11 +24,11 @@ const handleLogin = async (request, response) => {
   }
 
   const userForToken = {
-    id: user._id,
+    userId: user._id,
     email: user.email
   }
 
-  const token = jwt.sign(userForToken, process.env.SECRET);
+  const token = jwt.sign(userForToken, process.env.JWT_SECRET);
 
   response.status(200).send({ email: user.email, token })
 }

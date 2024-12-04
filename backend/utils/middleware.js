@@ -1,15 +1,15 @@
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 
-const requestLogger = (request, response, next) => {
-  console.log("Method:", request.method);
-  console.log("Path:  ", request.path);
-  console.log("Body:  ", request.body);
+const requestLogger = (req, res, next) => {
+  console.log("Method:", req.method);
+  console.log("Path:  ", req.path);
+  console.log("Body:  ", req.body);
   console.log("---");
-  next()
-}
+  next();
+};
 
-const verifyToken = (request, response, next) => {
-  const authHeader = request.headers.authorization;
+const verifyToken = (req, res, next) => {
+  const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return res.status(401).json({ error: "Unauthorized" });
@@ -17,14 +17,14 @@ const verifyToken = (request, response, next) => {
 
   const token = authHeader.split(" ")[1];
   try {
-    request.user = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = jwt.verify(token, process.env.JWT_SECRET);
     next();
   } catch (error) {
-    return response.status(403).json({ error: "Invalid token" });
+    return res.status(403).json({ error: "Invalid token" });
   }
 };
 
 module.exports = {
   requestLogger,
-  verifyToken
-}
+  verifyToken,
+};

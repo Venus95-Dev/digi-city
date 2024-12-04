@@ -9,7 +9,7 @@ const reservationsRouter = require("./routes/reservationsRoutes");
 
 app.use(express.json());
 
-const middleware = require("./utils/middleware")
+const middleware = require("./utils/middleware");
 
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
@@ -28,6 +28,6 @@ app.use(middleware.requestLogger);
 app.use("/api/auth/signup", usersRouter);
 app.use("/api/auth/login", loginRouter);
 app.use("/api/destinations", destinationsRouter);
-app.use("/api/reservations", reservationsRouter)
+app.use("/api/reservations", reservationsRouter);
 
 module.exports = app;

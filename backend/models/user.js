@@ -9,16 +9,20 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
-  passwordHash: String,
+  passwordHash: {
+    type: String,
+    required: true,
+  },
   createdAt: {
     type: Date,
     required: true,
   },
   role: {
     type: String,
-    default: "user"
-  }
+    default: "user",
+  },
 });
 
 userSchema.set("toJSON", {
@@ -26,7 +30,7 @@ userSchema.set("toJSON", {
     returnedObject.id = returnedObject._id.toString();
     delete returnedObject._id;
     delete returnedObject.__v;
-    // dont reveal the passwordHash 
+    // dont reveal the passwordHash
     delete returnedObject.passwordHash;
   },
 });

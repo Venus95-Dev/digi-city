@@ -1,7 +1,8 @@
 const loginRouter = require("express").Router();
 
 const {
-  handleLogin
+  handleLogin,
+  // More handlers
 } = require("../controllers/login");
 
 loginRouter.post("/", handleLogin);

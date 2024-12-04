@@ -5,6 +5,7 @@ const app = express();
 const usersRouter = require("./routes/usersRoutes");
 const loginRouter = require("./routes/loginRoutes");
 const destinationsRouter = require("./routes/destinationRoutes");
+const reservationsRouter = require("./routes/reservationsRoutes");
 
 app.use(express.json());
 
@@ -27,5 +28,6 @@ app.use(middleware.requestLogger);
 app.use("/api/auth/signup", usersRouter);
 app.use("/api/auth/login", loginRouter);
 app.use("/api/destinations", destinationsRouter);
+app.use("/api/reservations", reservationsRouter)
 
 module.exports = app;

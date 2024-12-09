@@ -1,0 +1,51 @@
+.trending-destinations{
+  padding: 20px;
+  text-align: left;
+  margin-top: 40px;
+
+}
+.cards{
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 50px;
+}
+
+.card{
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(8, 8, 8, 0.1);
+  
+  
+
+}
+.card img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.see-more-container {
+
+ 
+  padding: 8px;
+}
+
+.see-more {
+  background-color: #ed6226;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+  background-color: #e2988b;
+}

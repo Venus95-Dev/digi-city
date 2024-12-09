@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+  background-color:#04456e
+ 
+}
+.navbar .logo{
+  max-height: 50px;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 90px;
+  font-family: serif;
+  
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+  font-size: 17px;
+
+}
+.nav-links li a:hover{
+  color: #87ceeb;
+}
+.auth-buttons{
+  display: flex;
+  gap: 10px;
+}
+.auth-buttons button{
+  padding: 8px 15px;
+  border: 1px solid #4683b4;
+  /* background-color: transparent; */
+  color: #4683b4;
+  font-size: 15px;
+  border-radius: 20px ;
+  cursor: pointer;
+  font-family: serif;
+  
+}
+
+.auth-buttons button:hover{
+  background-color: #65c0e4;
+  color: rgb(232, 235, 235);
+}

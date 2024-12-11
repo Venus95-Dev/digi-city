@@ -2,7 +2,6 @@ const bcrypt = require("bcrypt");
 const User = require("../models/user");
 
 // Create new user
-// TODO Implement validation and patch security issues
 const createUser = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;

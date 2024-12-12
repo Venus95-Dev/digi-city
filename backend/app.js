@@ -1,7 +1,7 @@
 const config = require("./utils/config");
 
 const express = require("express");
-const cookieParser = require('cookie-parser');
+const cookieParser = require("cookie-parser");
 
 const app = express();
 const usersRouter = require("./routes/usersRoutes");
@@ -28,7 +28,7 @@ mongoose
   });
 
 app.use(middleware.requestLogger);
-app.use("/api/auth/signup", usersRouter);
+app.use("/api/auth", usersRouter);
 app.use("/api/auth/login", loginRouter);
 app.use("/api/destinations", destinationsRouter);
 app.use("/api/reservations", reservationsRouter);

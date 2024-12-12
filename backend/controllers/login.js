@@ -26,16 +26,18 @@ const handleLogin = async (req, res) => {
     email: user.email,
   };
 
-  const token = jwt.sign(userForToken, process.env.JWT_SECRET, { expiresIn: '1h' });
+  const token = jwt.sign(userForToken, process.env.JWT_SECRET, {
+    expiresIn: "1h",
+  });
 
   res.cookie("token", token, {
     httpOnly: true,
     secure: true,
     sameSite: "Strict",
-    maxAge: 3600000 // Cookie expiry (1 hour)
-  })
+    maxAge: 3600000, // Cookie expiry (1 hour)
+  });
 
-  res.json({ message: 'Logged in successfully' });
+  res.json({ message: "Logged in successfully" });
 };
 
 module.exports = {

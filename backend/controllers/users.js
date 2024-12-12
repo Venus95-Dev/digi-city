@@ -1,5 +1,6 @@
 const bcrypt = require("bcrypt");
 const User = require("../models/user");
+const jwt = require("jsonwebtoken");
 
 // Create new user
 const createUser = async (req, res, next) => {
@@ -29,6 +30,22 @@ const createUser = async (req, res, next) => {
   }
 };
 
+const validateUser = (req, res) => {
+  const token = req.cookies.token;
+
+  if (!token) {
+    res.status(401).json({ isAuthenticated: false });
+  }
+
+  try {
+    const user = jwt.verify(token, process.env.JWT_SECRET);
+    res.json({ isAuthenticated: true, user });
+  } catch (err) {
+    res.status(401).json({ isAuthenticated: false });
+  }
+};
+
 module.exports = {
   createUser,
+  validateUser,
 };

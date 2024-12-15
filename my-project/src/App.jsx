@@ -9,7 +9,8 @@ import PlanningSection from './components/PlanningSection';
 import WhyChoose from './components/Whychoose';
 import Footer from './components/Footer';
 import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path='contact' element ={<Contact/>}/>
+          
         </Routes>
       </div>
     </Router>

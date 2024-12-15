@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Auth.css';
 
-const Auth = () => {
+const Login = () => {
   const [activeForm, setActiveForm] = useState('login'); // 'login', 'signup', 'forgot'
 
   const renderForm = () => {
@@ -60,4 +60,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Login;

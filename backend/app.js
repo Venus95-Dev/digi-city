@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const usersRouter = require("./routes/usersRoutes");
 const loginRouter = require("./routes/loginRoutes");
+const logoutRouter = require("./routes/logoutRoutes");
 const destinationsRouter = require("./routes/destinationRoutes");
 const reservationsRouter = require("./routes/reservationsRoutes");
 
@@ -30,6 +31,7 @@ mongoose
 app.use(middleware.requestLogger);
 app.use("/api/auth", usersRouter);
 app.use("/api/auth/login", loginRouter);
+app.use("/api/auth/logout", logoutRouter);
 app.use("/api/destinations", destinationsRouter);
 app.use("/api/reservations", reservationsRouter);
 

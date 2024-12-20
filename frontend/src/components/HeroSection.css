@@ -1,0 +1,101 @@
+
+
+  body {
+    background-color: #fafafa;
+    justify-content: center;
+    min-height: 0vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-section {
+    display: flex;
+     
+      align-items: center;
+      padding: 95px 300px; 
+    background-image: url('../assets/hero6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+  
+  }
+    
+    .hero-content {
+   
+      padding: 20px;
+    max-width: 900px;
+    background: rgba(191, 243, 253, 0.6); /* Slight dark overlay for better text visibility */
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(195, 222, 238, 0.6);
+    }
+    
+    .hero-content h1  {
+   
+      font-size: 48px;
+      line-height: 1.8;
+      padding: 15px;
+      transition: all 0.3s ease;
+      
+      font-family: serif;
+      color: #383838;
+      
+      
+  
+    }
+  
+   .hero-content h1:hover{
+    color: #4682b4;
+    transform: scale(1.05);
+   }
+   
+    
+    .hero-content p {
+     color: #5e5b5b;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      text-align: justify;
+      padding: 15px;
+      transition: all 0.3s ease;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: -10px;
+    
+    }
+    
+    .search-bar input,
+    .search-bar select {
+      padding: 10px;
+      font-size: 1rem;
+      border: 2px solid #2fa8d4;
+      border-radius: 20px;
+      font-family: serif;
+    }
+    
+  
+  
+  
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #f2f6f8;
+      color: #4683b4;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 1px solid #4683b4;
+      font-family: serif;
+      
+     
+     
+    }
+    
+    .search-bar button:hover {
+      background-color: #65c0e4;
+      color: #ffffff;
+    }
+  
+    

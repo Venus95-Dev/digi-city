@@ -1,0 +1,53 @@
+.planning-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d5c4b2;
+  border-radius: 40px;
+  margin: 4rem auto;
+  max-width: 1300px;
+  padding: 20px;
+  color: #ffff;
+
+  background: #c2c2c2; /* Slight dark overlay for better text visibility */
+  border-radius: 8px;
+  box-shadow: 1px 3px 9px#8b8b8b;
+  
+}
+
+.planning-content {
+  flex: 1;
+}
+
+.planning-content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  
+}
+
+.planning-content p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.see-more-btn {
+  background-color: #ed6226;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+ 
+}
+
+.see-more-btn:hover {
+  background-color: #e2988b;
+
+}
+
+.planning-image img {
+
+  max-width: 350px;
+  border-radius: 40px;
+
+}

@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3px;
+  background-color:#04456e
+ 
+}
+.navbar .logo{
+  max-height: 50px;
+}
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 90px;
+  font-family: serif;
+  
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(250, 249, 249);
+  font-size: 17px;
+
+}
+.nav-links li a:hover{
+  color: #ed6226;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+

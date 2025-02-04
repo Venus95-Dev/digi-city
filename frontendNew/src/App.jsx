@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import TrendingDestination from './components/TrendingDestinations';
 import PlanningSection from './components/PlanningSection';
-import WhyChoose from './components/Whychoose';
+import Whychoose from './components/Whychoose';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Auth from './components/Auth';
@@ -28,7 +28,7 @@ function App() {
                 <HeroSection />
                 <TrendingDestination />
                 <PlanningSection />
-                <WhyChoose />
+                <Whychoose />
                 <Footer />
                 
               </>

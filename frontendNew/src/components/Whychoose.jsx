@@ -1,7 +1,7 @@
 import React from 'react';
-import './WhyChoose.css';
+import './Whychoose.css';
 
-const WhyChoose = () => {
+const Whychoose = () => {
   const features = [
     {
       title: 'Ultimate flexibility',
@@ -45,4 +45,4 @@ const WhyChoose = () => {
   );
 };
 
-export default WhyChoose;
+export default Whychoose;

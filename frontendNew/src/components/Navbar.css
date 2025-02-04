@@ -7,12 +7,12 @@
  
 }
 .navbar .logo{
-  max-height: 50px;
+  max-height: 30px;
 }
 .nav-links{
   display: flex;
   list-style: none;
-  gap: 90px;
+  gap: 150px;
   font-family: serif;
   
   

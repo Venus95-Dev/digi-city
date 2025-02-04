@@ -60,7 +60,13 @@ import egyptTour3Img from '../assets/egypt_tour3.jpg';
 import egyptTour4Img from '../assets/egypt_tour4.jpg';
 import egyptTour5Img from '../assets/egypt_tour5.jpg';
 import athensTour1Img from '../assets/athens_tour1.jpg';
-
+import athensTour2Img from '../assets/athens_tour2.jpg';
+import athensTour3Img from '../assets/athens_tour3.jpg';
+import athensTour4Img from '../assets/athens_tour4.jpg';
+import athensTour5Img from '../assets/athens_tour5.jpg';
+import athensTour6Img from '../assets/athens_tour6.jpg';
+import athensTour7Img from '../assets/athens_tour7.jpg';
+import athensTour8Img from '../assets/athens_tour8.jpg';
 
 
 const toursData = {
@@ -588,7 +594,64 @@ const toursData = {
           duration: "1 Days",
           image: athensTour1Img,
         },
+        {
+          id: 2,
+          name: " Santorini ",
+          description: "Island with whitewashed houses and stunning sunsets.",
+          price: "$100",
+          duration: "1 Days",
+          image: athensTour2Img,
+        },
+        {
+          id: 3,
+          name: "Mykonos ",
+          description: "Knowen for beaches, nightlife, and iconic windmills.",
+          price: "$100",
+          duration: "1 Days",
+          image: athensTour3Img,
+        },
+        {
+          id: 4,
+          name: "Delphi ",
+          description: "Ancient sanctury of Apolla and famous oracle site.",
+          price: "$100",
+          duration: "1 Days",
+          image: athensTour4Img,
+        },
+        {
+          id: 5,
+          name: "Meteora ",
+          description: "Monasteries perched on towering rock pillars.",
+          price: "$100",
+          duration: "1 Days",
+          image: athensTour5Img,
+        },
+        {
+          id: 6,
+          name: "Rhodes ",
+          description: "Historic island with medieval Old Town and castles.",
+          price: "$100",
+          duration: "1 Days",
+          image: athensTour6Img,
+        },
+        {
+          id: 7,
+          name: "Corfu ",
+          description: "Lush island with Venetian architecture.",
+          price: "$150",
+          duration: "1 Days",
+          image: athensTour7Img,
+        },
+        {
+          id: 8,
+          name: "Zakynthos ",
+          description: "Famous dor Navagio beach with a shipwreck.",
+          price: "$200",
+          duration: "1 Days",
+          image: athensTour8Img,
+        },
     ]
+    
 
 
 };

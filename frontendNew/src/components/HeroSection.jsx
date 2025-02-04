@@ -9,12 +9,13 @@ const HeroSection = () => {
       <div className="hero-content">
         {/* <h1>Find Your Next Adventure</h1> */}
         <div className="search-bar">
-          <i className="fa fa-search search-icon" aria-hidden="true"></i>
+          <i className="" aria-hidden="true"></i>
           <input
             type="text"
             placeholder="Find Your Next Adventure...."
             className="search-input"
           />
+           <button>Search</button>
         </div>
       </div>
     </section>

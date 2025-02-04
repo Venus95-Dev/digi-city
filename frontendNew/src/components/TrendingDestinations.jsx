@@ -23,7 +23,7 @@ function TrendingDestinations() {
     { name: 'Tokyo', tours: '7 Tours', img: tokyoImg },
     { name: 'London', tours: '11 Tours', img: londonImg },
     { name: 'Egypt', tours: '10 Tours', img: egyptImag },
-    { name: 'Greece', tours: '10 Tours', img: greecaImg },
+    { name: 'Greece', tours: '8 Tours', img: greecaImg },
   ];
 
   const [visibleCount, setVisibleCount] = useState(5);

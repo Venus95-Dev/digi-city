@@ -1,0 +1,89 @@
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 6rem;
+ 
+  padding: 60px;
+ 
+  margin-top: 100px;
+}
+
+.card {
+  border: 2px solid #C0C0C0;
+  padding: 10px;
+  box-shadow: 0 1px 8px #124e4e;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-details img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.product-details p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.product-details button {
+  background-color: #ed6226;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.product-details button:hover {
+  background-color: #e2988b;
+}
+
+
+.back-button {
+  background-color: #ed6226;
+  color: #f0e6e6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 20px auto;
+}
+
+
+
+.back-button:hover {
+  background-color: #e2988b;
+  color: black;
+}

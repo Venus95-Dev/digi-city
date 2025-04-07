@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 
 import './Navbar.css';
-import logo from '../assets/logo.png';
+import logo from '../assets/city.jpg';
 
 
 const Navbar = () => {
@@ -36,11 +36,19 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/destination">Destination</Link>
+            <Link to="/destination">Shop</Link>
           </li>
+          <li>
+            <Link to="/booking">Booking</Link>
+          </li>
+         
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/about us">About Us</Link>
+          </li>
+
         </ul>
       </nav>
       <div className="auth-section">

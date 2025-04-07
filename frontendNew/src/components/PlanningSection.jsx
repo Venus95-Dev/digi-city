@@ -1,17 +1,21 @@
 import React from 'react';
 import './PlanningSection.css';
-import londonImg from '../assets/london.jpg'
+import { useNavigate } from 'react-router-dom';
+import londonImg from '../assets/passi1.jpg'
 
 const PlanningSection = () => {
+  const navigate = useNavigate(); 
   return (
     <section className="planning-section">
       <div className="planning-content">
-        <h2>Keep on Planning</h2>
-        <p>What to do, where to eat & more trip inspo.</p>
-        <button className="see-more-btn">See More</button>
+    
+        <p>At DIGICITY, we offer quick and convenient Passport Photography services tailored to your needs..</p>
+        <h>No long waits just book your appointment and get your photos done affordably and efficiently.</h>
+        <button className="see-more-btn"onClick={() => navigate('/booking')}>Book Now</button> 
       </div>
       <div className="planning-image">
         <img src={londonImg} alt="Big Ben in London" />
+      
       </div>
     </section>
   );

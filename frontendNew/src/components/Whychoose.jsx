@@ -4,34 +4,30 @@ import './Whychoose.css';
 const Whychoose = () => {
   const features = [
     {
-      title: 'Ultimate flexibility',
+      title: 'Why',
       description:
-        "You're in control, with free cancellation and payment options to satisfy any plan or budget.",
-      icon: '🌀', // Use an emoji or replace with an icon library
+        "Digicity offers fast, reliable repairs for phones, tablets, and computers. Since 2021, we’ve become a trusted name, also providing accessories and refurbished devices.",
+      icon: '❓', // Use an emoji or replace with an icon library
     },
     {
-      title: 'Memorable experiences',
+      title: 'RAPID SMARTPHONE REPAIRS',
       description:
-        'Browse and book tours and activities so incredible, you’ll want to tell your friends.',
-      icon: '🎉',
+        'Our certified technicians fix most issues on-site — often in under an hour. No appointment needed!',
+      icon: '⚡',
     },
     {
-      title: 'Quality at our core',
+      title: 'PEACE OF MIND – 12 MONTH WARRANTY ',
       description:
-        'High-quality standards. Millions of reviews. A tour company.',
-      icon: '💎',
+        'All screen repairs come with a 12-month warranty, giving you peace of mind and trusted quality.',
+      icon: '✅',
     },
-    {
-      title: 'Award-winning support',
-      description:
-        'New price? New plan? No problem. We’re here to help, 24/7.',
-      icon: '🏆',
-    },
+    
+   
   ];
 
   return (
     <section className="why-choose">
-      <h2>Why choose Yatra</h2>
+      <h2>Why choose DIGICITY</h2>
       <div className="features">
         {features.map((feature, index) => (
           <div key={index} className="feature">

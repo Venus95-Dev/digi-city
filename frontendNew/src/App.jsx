@@ -1,15 +1,18 @@
 // 
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Form } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import TrendingDestination from './components/TrendingDestinations';
+
+import TrendingProducts from './components/TrendingProducts';
 import PlanningSection from './components/PlanningSection';
 import Whychoose from './components/Whychoose';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Auth from './components/Auth';
+import AppoinmentList from './components/AppoinmentList';
+
 
 
 
@@ -26,18 +29,22 @@ function App() {
             element={
               <>
                 <HeroSection />
-                <TrendingDestination />
+                <TrendingProducts />
                 <PlanningSection />
+               
                 <Whychoose />
                 <Footer />
                 
               </>
             }
           />
-         
+
           <Route path='contact' element ={<Contact/>}/>
-          <Route path='destination' element ={<TrendingDestination/>}/>
+          <Route path='destination' element ={<TrendingProducts/>}/>
           <Route path='/auth' element={<Auth/>} />
+          <Route path="/booking" element={<AppoinmentList />} />
+         
+          
     
 
           

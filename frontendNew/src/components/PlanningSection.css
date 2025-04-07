@@ -2,16 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d5c4b2;
+  background-color:#bbbbbc  ;
   border-radius: 40px;
   margin: 4rem auto;
   max-width: 1300px;
   padding: 20px;
-  color: #ffff;
+  color: #0a0a0a;
 
-  background: #c2c2c2; /* Slight dark overlay for better text visibility */
+   /* Slight dark overlay for better text visibility */
   border-radius: 8px;
-  box-shadow: 1px 3px 9px#8b8b8b;
+  box-shadow: 1px 3px 9px #124e4e;
   
 }
 
@@ -19,35 +19,46 @@
   flex: 1;
 }
 
-.planning-content h2 {
-  font-size: 1.8rem;
-  color: #333;
+
+
+.planning-content p {
+  font-size: 19px;
+  margin: 3rem 0;
+  font-weight: bold;
+  
   
 }
 
-.planning-content p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
 .see-more-btn {
-  background-color: #ed6226;
-  color: #fff;
-  padding: 0.8rem 1.2rem;
+  /* background-color: #FF3131;
+  color: #080808;
+  padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  font-family: serif; */
+  margin: 30px;
+   
+  padding: 10px;
+  background-color:#ff3131;
+  color: #0e0e0e;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: serif;
  
 }
 
 .see-more-btn:hover {
-  background-color: #e2988b;
+ 
+  color: white;
 
 }
 
 .planning-image img {
 
-  max-width: 350px;
-  border-radius: 40px;
+  max-width: 400px;
+  border-radius: 90px;
 
 }

@@ -1,21 +1,24 @@
 
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css'; // Import FontAwesome
+import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
+import 'font-awesome/css/font-awesome.min.css';
 import './HeroSection.css';
+import videoBg from '../assets/herodigi.mp4';
 
 const HeroSection = () => {
+  const navigate = useNavigate(); // ✅ Hook for navigation
+
   return (
     <section className="hero-section">
+      <video autoPlay muted loop id="hero-video">
+        <source src={videoBg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       <div className="hero-content">
-        {/* <h1>Find Your Next Adventure</h1> */}
+        <h1>Phone, Laptop and Tablet Maintenance</h1>
         <div className="search-bar">
-          <i className="" aria-hidden="true"></i>
-          <input
-            type="text"
-            placeholder="Find Your Next Adventure...."
-            className="search-input"
-          />
-           <button>Search</button>
+          <button onClick={() => navigate('/booking')}>Book Now</button> {/* ✅ Navigate to Appointments Page */}
         </div>
       </div>
     </section>

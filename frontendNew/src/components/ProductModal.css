@@ -1,0 +1,59 @@
+.product-list {
+    display: flex;           /* Use flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    gap: 20px;               /* Add space between products */
+    position: relative;      /* Needed for layering */
+    overflow: hidden;        /* Prevents any items from overflowing */
+  }
+  
+  .product-card {
+    position: absolute;      /* Position each card absolutely to layer them */
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+    opacity: 0.9;             /* Make products slightly transparent */
+    z-index: 1;               /* Default z-index, all cards are behind each other */
+    width: 250px;             /* Set a fixed width for cards */
+    height: 350px;            /* Set a fixed height for cards */
+    text-align: center;       /* Center text inside the product card */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px); /* Lift up the card when hovered */
+    z-index: 10;              /* Bring the hovered card to the front */
+    opacity: 1;               /* Make the hovered product fully opaque */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-card h4 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  .product-card button {
+    background-color: #ed6226;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .product-card button:hover {
+    background-color: #e2988b;
+    color: black;
+  }
+  

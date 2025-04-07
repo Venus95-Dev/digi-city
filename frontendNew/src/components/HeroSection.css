@@ -10,19 +10,58 @@ body {
 }
 
 
+
+
+.hero-content {
+
+  padding: 10px;
+max-width: 800px;
+background: rgba(202, 233, 248, 0.6);
+border-radius: 8px;
+box-shadow: 0px 3px 9px rgba(248, 244, 244, 0.6);
+
+}
+
+.hero-content h1  {
+ 
+  font-size: 30px;
+  line-height: 1.8;
+  padding: 15px;
+  transition: all 0.3s ease;
+  
+  font-family: serif;
+  color: #0c0c0c;
+  
+  
+
+}
+
+.hero-content h1:hover{
+color: #1c1a1a  ;
+transform: scale(1.05);
+text-shadow:0px 2px 8px #f7f4f4;
+}
+
+
+
 .hero-section {
-  
-  background-image: url('../assets/hero6.jpg');
-  background-size: cover;
-  
-  padding: 150px 300px; 
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Full screen height */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat; 
-  
+  overflow: hidden;
+}
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the section */
+  z-index: -1; /* Push video behind content */
 }
 
 .search-input {
@@ -32,7 +71,7 @@ body {
  
   padding-right: 270px; 
   border-radius: 20px; 
-  border-color: #080808;
+  border-color: #c0c0c0;
  
 } 
 
@@ -40,8 +79,8 @@ body {
 .search-bar button {
  
   padding: 10px;
-  background-color:#ed6226;
-  color: #fcf7f7;
+  background-color:#ff3131;
+  color: #0e0e0e;
   border: none;
   border-radius: 20px;
   font-size: 1rem;
@@ -52,7 +91,7 @@ body {
  
 }
 .search-bar :hover{
-  color: #0c0c0c;
+  color: #fef6f6;
 }
 
 

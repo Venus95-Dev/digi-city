@@ -1,11 +1,12 @@
 
+
+
+
+// TrendingProducts.jsx
 import React, { useState } from 'react';
 import './TrendingProducts.css';
-import './modal.css';
-import productData from '../components/ProductData'
+import { useCart } from '../components/CartContext';
 
-import iphoneImg from '../assets/iphone.png';
-import androidImg from '../assets/android.png';
 import coverImg from '../assets/cover.png';
 import batteryImg from '../assets/battry.png';
 import chargerImg from '../assets/charger2.png';
@@ -27,9 +28,9 @@ function ProductModal({ product, onClose }) {
 }
 
 function TrendingProducts() {
+  const { addToCart } = useCart();
+
   const allProducts = [
-    { name: 'iPhones', img: iphoneImg },
-    { name: 'Androides', img: androidImg },
     { name: 'Phone Covers', img: coverImg },
     { name: 'Batteries', img: batteryImg },
     { name: 'Chargers', img: chargerImg },
@@ -43,6 +44,25 @@ function TrendingProducts() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const itemsPerPage = 10;
+
+  const productData = {
+    'Phone Covers': [
+      { id: 1, name: "Red iPhone Cover", description: "Slim, shockproof", price: "€19", image: coverImg },
+      { id: 2, name: "Clear Case", description: "Transparent cover with protection", price: "€15", image: coverImg },
+    ],
+    'Batteries': [
+      { id: 3, name: "iPhone Battery", description: "Original capacity replacement", price: "€29", image: batteryImg },
+    ],
+    'Chargers': [
+      { id: 4, name: "USB-C Charger", description: "Fast charge certified", price: "€22", image: chargerImg },
+    ],
+    'Headphones': [
+      { id: 5, name: "Wireless Earbuds", description: "Bluetooth noise cancelling", price: "€59", image: airpodsImg },
+    ],
+    'Screen Protectors': [
+      { id: 6, name: "Tempered Glass", description: "Anti-scratch screen protector", price: "€12", image: screenProtectorImg },
+    ],
+  };
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -71,7 +91,7 @@ function TrendingProducts() {
       {!selectedCategory ? (
         <div className="cards">
           {allProducts.map((item, index) => (
-            <div className="card" key={index} onClick={() => handleCategoryClick(item.name)}>
+            <div className={`card card-${index}`} key={index} onClick={() => handleCategoryClick(item.name)}>
               <img src={item.img} alt={item.name} />
               <h3>{item.name}</h3>
             </div>
@@ -87,7 +107,7 @@ function TrendingProducts() {
                 <h4>{product.name}</h4>
                 <p>{product.description}</p>
                 <p>Price: {product.price}</p>
-                <button onClick={() => handleViewDetails(product)}>Buy Now</button>
+                <button onClick={() => addToCart(product)}>Add to Cart 🛒</button>
               </div>
             ))}
           </div>

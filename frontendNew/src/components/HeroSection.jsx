@@ -1,12 +1,13 @@
-
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
+import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // ✅ Import for i18n
 import 'font-awesome/css/font-awesome.min.css';
 import './HeroSection.css';
 import videoBg from '../assets/herodigi.mp4';
 
 const HeroSection = () => {
-  const navigate = useNavigate(); // ✅ Hook for navigation
+  const navigate = useNavigate();
+  const { t } = useTranslation(); // ✅ translation hook
 
   return (
     <section className="hero-section">
@@ -16,9 +17,11 @@ const HeroSection = () => {
       </video>
 
       <div className="hero-content">
-        <h1>Phone, Laptop and Tablet Maintenance</h1>
+        <h1>{t('hero.title')}</h1> {/* ✅ Translated title */}
         <div className="search-bar">
-          <button onClick={() => navigate('/booking')}>Book Now</button> {/* ✅ Navigate to Appointments Page */}
+          <button onClick={() => navigate('/booking')}>
+            {t('hero.bookNow')} {/* ✅ Translated button */}
+          </button>
         </div>
       </div>
     </section>

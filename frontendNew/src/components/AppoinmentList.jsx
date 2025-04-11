@@ -1,44 +1,25 @@
-// import React from 'react';
-// import './AppoinmentList.css'
-// const Booking = () => {
-//   // ✅ Define the appointments list
-//   const appointments = [
-//     { id: 1, service: "Phone Repair", duration: "1 hr", price: "Price Negotiable" },
-//     { id: 2, service: "Battery Change", duration: "1 hr", price: "Price Negotiable" },
-//     { id: 3, service: "Passport Photography", duration: "15 min", price: "15€ VAT Included" },
-//     { id: 4, service: "Inspection", duration: "15 min", price: "20€" },
-//   ];
 
-//   return (
-//     <div>
-//       <h2>Appointment List</h2>
-//       <ul>
-//         {appointments.map((appointment) => (
-//           <li key={appointment.id}>
-//             <strong>{appointment.service}</strong> - {appointment.duration} - {appointment.price}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
 
-// export default Booking;
 
-import React from 'react';
+import React, { useState } from 'react';
 import './AppoinmentList.css';
-
-const appointments = [
-  { id: 1, name: "Phone Repair", time: "1 hr", price: "Price Negotiable" },
-  { id: 2, name: "Battery Change", time: "1 hr", price: "Price Negotiable" },
-  { id: 3, name: "Inspection", time: "15 min", price: "20€" },
-  { id: 4, name: "Passport Photography", time: "15 min", price: "15€ VAT Included" },
-];
+import BookingFormModal from "../components/BookingFormModal";
+import { useTranslation } from 'react-i18next';
 
 const Booking = () => {
+  const [selectedService, setSelectedService] = useState(null);
+  const { t } = useTranslation();
+
+  const appointments = [
+    { id: 1, name: t('booking.phoneRepair'), time: t('booking.time1'), price: t('booking.price1') },
+    { id: 2, name: t('booking.batteryChange'), time: t('booking.time2'), price: t('booking.price2') },
+    { id: 3, name: t('booking.inspection'), time: t('booking.time3'), price: t('booking.price3') },
+    { id: 4, name: t('booking.passport'), time: t('booking.time4'), price: t('booking.price4') },
+  ];
+
   return (
     <div className="appointment-container">
-      <h2 className="appointment-header">Book An Appointment</h2>
+      <h2 className="appointment-header">{t('booking.title')}</h2>
       <ul className="appointment-list">
         {appointments.map((appointment) => (
           <li key={appointment.id} className="appointment-item">
@@ -48,10 +29,22 @@ const Booking = () => {
                 <p>{appointment.time} - {appointment.price}</p>
               </div>
             </div>
-            <button className="book-now-btn">Book Now</button>
+            <button
+              className="book-now-btn"
+              onClick={() => setSelectedService(appointment.name)}
+            >
+              {t('booking.bookNow')}
+            </button>
           </li>
         ))}
       </ul>
+
+      {selectedService && (
+        <BookingFormModal
+          service={selectedService}
+          onClose={() => setSelectedService(null)}
+        />
+      )}
     </div>
   );
 };

@@ -1,98 +1,66 @@
-/* .footer {
-    background-color:#f4f6f7;
-    color: rgb(2, 2, 2);
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
-  
-  .footer p {
-    margin: 5px 0;
-  }
-  
-  .footer a {
-    color: #ff5722;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-   */
-   .footer {
-    background: #bbbbbc; /* Slight dark overlay for better text visibility */
-    border-radius: 8px;
-    box-shadow: 20px 1px 20px #124e4e;
-    color: #131313;
-    padding: 1px 1px 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #616060;
-  }
-  
-  .footer h4 {
-    font-size: 1.2rem;
-    color: #080808;
-    margin-bottom: 12px;
-  }
-  
-  .footer p {
-    font-size: 0.95rem;
-    color: #030303;
-    margin: 6px 0;
-  }
-  
-  .footer-contact p,
-  .footer-hours p,
-  .footer-careers p {
-    line-height: 1.6;
-  }
-  
-  .footer-socials .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  
-  .footer-socials a {
-    color: #ff3131;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-socials a:hover {
-    color: #4ca6a9;
-  }
-  
-  .footer-careers {
-    max-width: 250px;
-  }
-  
-  .footer-careers .careers-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #ff3131;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-careers .careers-link:hover {
-    color: #4ca6a9;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 25px;
-    font-size: 0.85rem;
-    color: #999;
-  }
-  
+.footer {
+  background-color: #111111;
+  padding: 4rem 2rem 2rem;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  border-top: 1px solid #2a2a2a;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.footer p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff3d3d;
+}
+
+.careers-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: #ff3d3d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.careers-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #999999;
+}

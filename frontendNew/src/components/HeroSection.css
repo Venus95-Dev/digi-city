@@ -79,7 +79,7 @@ text-shadow:0px 2px 8px #f7f4f4;
 .search-bar button {
  
   padding: 10px;
-  background-color:#ff3131;
+  background: linear-gradient(to right, #ff3d85, #2f9198);
   color: #0e0e0e;
   border: none;
   border-radius: 20px;

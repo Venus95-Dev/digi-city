@@ -1,33 +1,34 @@
+
+
+
 import React from 'react';
 import './Whychoose.css';
+import { useTranslation } from 'react-i18next';
 
 const Whychoose = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
-      title: 'Why',
-      description:
-        "Digicity offers fast, reliable repairs for phones, tablets, and computers. Since 2021, we’ve become a trusted name, also providing accessories and refurbished devices.",
-      icon: '❓', // Use an emoji or replace with an icon library
+      icon: '❓',
+      title: t('whychoose.why.title'),
+      description: t('whychoose.why.description'),
     },
     {
-      title: 'RAPID SMARTPHONE REPAIRS',
-      description:
-        'Our certified technicians fix most issues on-site — often in under an hour. No appointment needed!',
       icon: '⚡',
+      title: t('whychoose.rapid.title'),
+      description: t('whychoose.rapid.description'),
     },
     {
-      title: 'PEACE OF MIND – 12 MONTH WARRANTY ',
-      description:
-        'All screen repairs come with a 12-month warranty, giving you peace of mind and trusted quality.',
       icon: '✅',
+      title: t('whychoose.warranty.title'),
+      description: t('whychoose.warranty.description'),
     },
-    
-   
   ];
 
   return (
     <section className="why-choose">
-      <h2>Why choose DIGICITY</h2>
+      <h2>{t('whychoose.heading')}</h2>
       <div className="features">
         {features.map((feature, index) => (
           <div key={index} className="feature">
@@ -42,3 +43,4 @@ const Whychoose = () => {
 };
 
 export default Whychoose;
+

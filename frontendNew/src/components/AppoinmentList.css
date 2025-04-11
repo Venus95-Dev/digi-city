@@ -1,4 +1,4 @@
-/* General styles */
+
 .appointment-container {
     max-width: 800px;
     margin: 40px auto;
@@ -15,8 +15,7 @@
     margin-bottom: 20px;
     color: #333;
   }
-  
-  /* Appointment List Styles */
+
   .appointment-list {
     list-style: none;
     padding: 0;
@@ -27,7 +26,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #fdf9fc;
     transition: background 0.3s ease;
   }
   
@@ -36,10 +35,10 @@
   }
   
   .appointment-item:hover {
-    background: #f9f9f9;
+    background: #f9f8f8;
   }
   
-  /* Text styles */
+
   .appointment-info {
     display: flex;
     align-items: center;
@@ -70,12 +69,12 @@
     color: #777;
   }
   
-  /* Book Now Button */
+  
   .book-now-btn {
      
   padding: 10px;
-  background-color:#ff3131;
-  color: #0e0e0e;
+  background: linear-gradient(to right, #ff3d85, #2f9198);
+  color: #0c0c0c;
   border: none;
   border-radius: 20px;
   font-size: 1rem;
@@ -87,7 +86,7 @@
     color: #eee;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 600px) {
     .appointment-item {
       flex-direction: column;
@@ -101,3 +100,4 @@
     }
   }
   
+

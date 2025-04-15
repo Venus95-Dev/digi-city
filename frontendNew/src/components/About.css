@@ -1,0 +1,41 @@
+.about-us {
+    padding: 26px 2px;
+    background: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4b7bec;
+  }
+  
+  .about-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  img {
+  
+    max-width: 700px;
+    height: auto ;
+    margin: 20px  3px;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  

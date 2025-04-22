@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "home": "Etusivu",
+    "services": "Palvelut",
+    "shop": "Kauppa",
+    "booking": "Varaa Aika",
+    "contact": "Yhteystiedot",
+    "about": "Meistä",
+    "cart": "Ostoskori",
+    "search": "Hae...",
+    "profile": "Profiili",
+    "settings": "Asetukset",
+    "logout": "Kirjaudu ulos",
+    "logoutMessage": "Olet kirjautunut ulos!"
+  },
+  "auth": {
+  "login": "Kirjaudu sisään",
+  "signup": "Rekisteröidy",
+  "email": "Sähköposti",
+  "password": "Salasana",
+  "name": "Koko nimi"
+},
+  "footer": {
+    "visitingHours": "Aukioloajat",
+    "weekdays": "Ma - Pe: 11:00 - 20:00",
+    "weekend": "Lauantai-Sunnuntai: Suljettu",
+    "contactTitle": "Ota yhteyttä",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "address": "Osoite",
+    "followUs": "Seuraa meitä",
+    "careersTitle": "Tule meille töihin",
+    "careersText": "Etsimme uusia tiimin jäseniä rakentamaan teknologian tulevaisuutta.",
+    "contactLink": "Ota yhteyttä →",
+    "rights": "Kaikki oikeudet pidätetään."
+  },
+  "hero": {
+    "title": "Puhelimen, läppäri ja tabletin huolto",
+    "bookNow": "Varaa aika"
+  },
+  "services": {
+    "title": "Palvelumme",
+    "intro": "Tarjoamme asiantuntevia korjauspalveluita iPhone, Android, tabletti ja kannettaville laitteille nopeasti ja laadukkaasti.",
+    "iphone": {
+      "title": "iPhonen korjaus",
+      "description": "Näytön korjaus, akun vaihto, vesivaurioiden korjaus ja paljon muuta kaikille iPhone-malleille.",
+      "button": "Valitse puhelin"
+    },
+    "android": {
+      "title": "Android-korjaus",
+      "description": "Korjaamme näytöt, ohjelmistot, akut ja komponentit suurimmilta Android-merkeiltä.",
+      "button": "Valitse puhelin"
+    },
+    "tablet": {
+      "title": "Tabletti- ja läppärikorjaus",
+      "description": "Näyttöviat, ohjelmisto-ongelmat, akun vaihdot ja laitteistokorjaukset kaikille laitteille.",
+      "button": "Ota yhteyttä"
+    }
+  },
+  "planning": {
+    "intro": "DIGICITY tarjoaa nopean ja kätevän passikuvauksen tarpeidesi mukaan.",
+    "cta": "Ei pitkiä odotusaikoja varaa aikasi ja saat kuvasi edullisesti ja tehokkaasti.",
+    "button": "Varaa aika"
+  },
+  "whychoose": {
+    "heading": "Miksi valita DIGICITY",
+    "why": {
+      "title": "Miksi",
+      "description": "Digicity tarjoaa nopeita ja luotettavia korjauksia puhelimille, tableteille ja tietokoneille. Vuodesta 2021 lähtien olemme olleet luotettava nimi, joka tarjoaa myös tarvikkeita ja kunnostettuja laitteita."
+    },
+    "rapid": {
+      "title": "NOPEAT ÄLYPUHELIMIEN KORJAUKSET",
+      "description": "Sertifioidut teknikkomme korjaavat useimmat ongelmat paikan päällä — usein alle tunnissa. Ei ajanvarausta tarvita!"
+    },
+    "warranty": {
+      "title": "MIELENRAUHA 12 KK TAKUU",
+      "description": "Kaikilla näytönkorjauksilla on 12 kuukauden takuu, mikä takaa laadun ja mielenrauhan."
+    }
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Jos sinulla on kysyttävää tai palautetta, ota rohkeasti yhteyttä!",
+    "name": "Nimi",
+    "namePlaceholder": "Kirjoita nimesi",
+    "email": "Sähköposti",
+    "emailPlaceholder": "Kirjoita sähköpostiosoitteesi",
+    "message": "Viesti",
+    "messagePlaceholder": "Kirjoita viestisi",
+    "send": "Lähetä viesti",
+    "thankYou": "Kiitos!",
+    "response": "Viestisi on vastaanotettu. Otamme sinuun pian yhteyttä."
+  },
+  
+  "booking": {
+    "title": "Varaa Aika",
+    "phoneRepair": "Puhelimen korjaus",
+    "batteryChange": "Akun vaihto",
+    "inspection": "Tarkastus",
+    "passport": "Passikuvaus",
+    "time1": "1 tunti",
+    "time2": "1 tunti",
+    "time3": "15 min",
+    "time4": "15 min",
+    "price1": "Hinta sovitaan",
+    "price2": "Hinta sovitaan",
+    "price3": "20€",
+    "price4": "15€ sis. ALV",
+    "bookNow": "Varaa"
+  },
+  "android": {
+    "title": "Samsung Android -huolto",
+    "repairs": "Korjaukset",
+    "backToModels": "Takaisin malleihin",
+    "series": {
+      "Galaxy S Series": "Galaxy S -sarja",
+      "Galaxy Note Series": "Galaxy Note -sarja",
+      "Galaxy A Series": "Galaxy A -sarja"
+    }
+  },
+  "iphone": {
+    "title": "Valitse iPhone malli",
+    "back": "Takaisin",
+    "repairs": "Korjaukset",
+    "backToModels": "Takaisin malleihin"
+  },
+  "repair": {
+  "screen": "Näytön korjaus",
+  "battery": "Akun vaihto",
+  "back": "Takakannen korjaus",
+  "bookBtn": "Varaa korjaus",
+  "warranty": "Takuu",
+  "time": "Korjauksen kesto",
+  "screenTitle": "näytön vaihto",
+  "batteryTitle": "akun vaihto",
+  "backTitle": "takalasin vaihto",
+  "screenDesc": "Rikkoutunut tai haljennut näyttö? Vaihdamme sen laadukkaaseen näyttöön, joka saa puhelimesi näyttämään uudelta.",
+  "batteryDesc": "Akkusi tyhjenee nopeasti tai ei lataudu kunnolla? Vaihdamme sen uuteen akkuun, joka kestää koko päivän.",
+  "backDesc": "Rikkoutunut takalasi? Ei hätää – laadukkaat osat ja siisti viimeistely tekevät puhelimestasi kuin uuden."
+},
+"cart": {
+  "title": "Ostoskorisi",
+  "empty": "Ostoskorisi on tyhjä.",
+  "total": "Yhteensä",
+  "checkout": "Siirry kassalle",
+  "remove": "Poista"
+},
+  "about": {
+    "title": "Tietoa DigiCitystä",
+    "p1": "DigiCity perustettiin vuonna 2021 Abdishakuur Mohamed Nuurin toimesta, joka tunnisti selkeän tarpeen ammattimaisille puhelinhuoltopalveluille. Hänen intohimonsa korjaamiseen alkoi jo nuorena ja on kehittynyt korkealle ammatilliselle tasolle.",
+    "p2": "DigiCity tarjoaa nopeita, tarkkoja ja luotettavia huoltopalveluita puhelimille, tableteille ja kannettaville. Käytämme laadukkaita varaosia ja nykyaikaisia työkaluja palauttaaksemme laitteesi mahdollisimman nopeasti.",
+    "p3": "Panostamme laatuun, läpinäkyvään hinnoitteluun ja asiakastyytyväisyyteen – tavoitteemme on tarjota ainutlaatuinen huoltokokemus.",
+    "list": {
+      "one": "Alkuperäiset varaosat",
+      "two": "Kokenut teknikkotiimi",
+      "three": "Ammattitaitoinen asiakastuki"
+    }
+  }
+}
+
+

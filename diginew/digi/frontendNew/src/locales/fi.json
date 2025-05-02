@@ -144,10 +144,48 @@
   "checkout": "Siirry kassalle",
   "remove": "Poista"
 },
+
+
+"product": {
+  "addProductTitle": "Lisää uusi tuote",
+  "namePlaceholder": "Tuotteen nimi",
+  "pricePlaceholder": "Hinta",
+  "imagePlaceholder": "Kuvan URL",
+  "categoryPlaceholder": "Kategoria",
+  "descriptionPlaceholder": "Kuvaus",
+  "saveButton": "Tallenna tuote",
+  "addSuccess": "Tuote lisätty onnistuneesti!",
+  "addError": "Tuotteen lisääminen epäonnistui."
+},
+"trending": {
+  "Phone Covers": "Puhelimen kuoret",
+  "Other accessories": "Muut tarvikkeet",
+  "Chargers": "Laturit",
+  "Screen Protectors": "Näytönsuojat",
+  "price": "Hinta",
+  "add_to_cart": "Lisää ostoskoriin",
+  "back": "Takaisin",
+  "search_results_for": "Hakutulokset",
+  "no_products_found": "Ei tuotteita löytynyt 🛒",
+  "close": "Sulje"
+  
+},
+"bookingForm": {
+  "book": "Varaa",
+  "name": "Nimesi",
+  "phone": "Puhelinnumero",
+  "email": "Sähköpostiosoite",
+  "confirm": "Vahvista",
+  "close": "Sulje",
+  "alertFillAll": "Täytä kaikki kentät.",
+  "confirmed": "Varaus vahvistettu palvelulle"
+},
+
+
   "about": {
-    "title": "Tietoa DigiCitystä",
-    "p1": "DigiCity perustettiin vuonna 2021 Abdishakuur Mohamed Nuurin toimesta, joka tunnisti selkeän tarpeen ammattimaisille puhelinhuoltopalveluille. Hänen intohimonsa korjaamiseen alkoi jo nuorena ja on kehittynyt korkealle ammatilliselle tasolle.",
-    "p2": "DigiCity tarjoaa nopeita, tarkkoja ja luotettavia huoltopalveluita puhelimille, tableteille ja kannettaville. Käytämme laadukkaita varaosia ja nykyaikaisia työkaluja palauttaaksemme laitteesi mahdollisimman nopeasti.",
+    "title": "Tietoa Digicitystä",
+    "p1": "Digicity perustettiin vuonna 2021 Abdishakuur Mohamed Nuurin toimesta, joka tunnisti selkeän tarpeen ammattimaisille puhelinhuoltopalveluille. Hänen intohimonsa korjaamiseen alkoi jo nuorena ja on kehittynyt korkealle ammatilliselle tasolle.",
+    "p2": "Digicity tarjoaa nopeita, tarkkoja ja luotettavia huoltopalveluita puhelimille, tableteille ja kannettaville. Käytämme laadukkaita varaosia ja nykyaikaisia työkaluja palauttaaksemme laitteesi mahdollisimman nopeasti.",
     "p3": "Panostamme laatuun, läpinäkyvään hinnoitteluun ja asiakastyytyväisyyteen – tavoitteemme on tarjota ainutlaatuinen huoltokokemus.",
     "list": {
       "one": "Alkuperäiset varaosat",

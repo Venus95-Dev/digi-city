@@ -12,7 +12,7 @@ import RepairDetailCard from "./RepairDetailCard";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const iphoneModels = [
+export const iphoneModels = [
   { model: "iPhone 16 Pro Max", screenRepair: 600, batteryReplacement: 330, backRepair: 370, image: iphoneImage },
   { model: "iPhone 16 Pro", screenRepair: 550, batteryReplacement: 299, backRepair: 350, image: iphoneImage },
   { model: "iPhone 16 Plus", screenRepair: 550, batteryReplacement: 350, backRepair: 299, image: iphoneImage },
@@ -91,3 +91,4 @@ const IphoneRepairDetails = () => {
 };
 
 export default IphoneRepairDetails;
+

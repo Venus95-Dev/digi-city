@@ -146,14 +146,52 @@
     "remove": "Remove"
   },
 
+"product": {
+  "addProductTitle": "Add New Product",
+  "namePlaceholder": "Product Name",
+  "pricePlaceholder": "Price",
+  "imagePlaceholder": "Image URL",
+  "categoryPlaceholder": "Category",
+  "descriptionPlaceholder": "Description",
+  "saveButton": "Save Product",
+  "addSuccess": "Product added successfully!",
+  "addError": "Failed to add product."
+},
+
+"trending": {
+  "price": "Price",
+  "add_to_cart": "Add to Cart",
+  "back": "Back",
+  "search_results_for": "Search results for",
+  "no_products_found": "No products found 🛒",
+  "close": "Close",
+  "Phone Covers": "Phone Covers",
+  "Other accessories": "Other accessories",
+  "Chargers": "Chargers",
+  "Screen Protectors": "Screen Protectors"
+},
+"bookingForm": {
+  "book": "Book",
+  "name": "Your Name",
+  "phone": "Phone Number",
+  "email": "Email address",
+  "confirm": "Confirm",
+  "close": "Close",
+  "alertFillAll": "Please fill in all fields.",
+  "confirmed": "Booking confirmed for"
+},
+
+
   "about": {
-    "title": "About DigiCity",
-    "p1": "DigiCity was established in 2021 by Abdishakuur Mohamed Nuur, who recognized a clear market demand for professional phone repair services. His passion for mobile repairs began in his teenage years and has since evolved into a high-level professional skillset.",
-    "p2": "At DigiCity, we are committed to delivering fast, precise, and reliable repair services for mobile phones, tablets, and laptops. Our experienced team uses high-quality parts and modern equipment to restore your device as quickly as possible.",
+    "title": "About Digicity",
+    "p1": "Digicity was established in 2021 by Abdishakuur Mohamed Nuur, who recognized a clear market demand for professional phone repair services. His passion for mobile repairs began in his teenage years and has since evolved into a high-level professional skillset.",
+    "p2": "At Digicity, we are committed to delivering fast, precise, and reliable repair services for mobile phones, tablets, and laptops. Our experienced team uses high-quality parts and modern equipment to restore your device as quickly as possible.",
     "p3": "With a focus on quality, transparent pricing, and customer satisfaction, we aim to provide a unique and trustworthy experience.",
     "list": {
       "one": "Original spare parts",
       "two": "Experienced technicians",
       "three": "Professional support"
     }
-  }}
+
+  }
+}

@@ -4,6 +4,11 @@
 import React, { useState } from "react";
 import "./AndroidRepairDetails.css";
 import RepairDetailCard from "./RepairDetailCard";
+
+
+
+
+
 import androidImage from "../assets/S23u.png";
 import andImage from "../assets/s20.png";
 import s21Image from "../assets/s21.png";
@@ -23,7 +28,7 @@ import a7Image from "../assets/a7.png"
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const groupedModels = {
+export const groupedModels = {
   "Galaxy S Series": [
     { model: "Samsung S23 Ultra", screenRepair: 500, batteryReplacement: 99, backRepair: 99, image: androidImage },
     { model: "Samsung S23 Plus", screenRepair: 450, batteryReplacement: 99, backRepair: 99, image: andImage },
@@ -85,6 +90,10 @@ const groupedModels = {
   ]
 };
 
+
+
+
+
 const AndroidRepairDetails = () => {
   const [activeSeries, setActiveSeries] = useState(null);
     const navigate = useNavigate();
@@ -138,4 +147,5 @@ const AndroidRepairDetails = () => {
 };
 
 export default AndroidRepairDetails;
+
 

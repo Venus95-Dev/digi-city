@@ -1,22 +1,23 @@
-const jwt = require('jsonwebtoken')
+
+
+const jwt = require('jsonwebtoken');
 
 const authMiddleware = (req, res, next) => {
-  const authHeader = req.headers.authorization
+  const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
-    return res.status(401).json({ message: 'دسترسی غیرمجاز' })
+    return res.status(401).json({ message: 'دسترسی غیرمجاز' });
   }
 
-  const token = authHeader.split(' ')[1]
+  const token = authHeader.split(' ')[1];
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET)
-    req.user = decoded
-    next()
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = { id: decoded.id };  // بهتر از ارسال کل decoded است
+    next();
   } catch (err) {
-    res.status(401).json({ message: 'توکن نامعتبر' })
+    res.status(401).json({ message: 'توکن نامعتبر' });
   }
-}
+};
 
-module.exports = authMiddleware
-
+module.exports = authMiddleware;

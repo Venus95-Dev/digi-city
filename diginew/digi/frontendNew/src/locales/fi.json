@@ -13,13 +13,47 @@
     "logout": "Kirjaudu ulos",
     "logoutMessage": "Olet kirjautunut ulos!"
   },
-  "auth": {
-  "login": "Kirjaudu sisään",
-  "signup": "Rekisteröidy",
-  "email": "Sähköposti",
-  "password": "Salasana",
-  "name": "Koko nimi"
-},
+  
+    "auth": {
+      "login": "Kirjaudu sisään",
+      "signup": "Rekisteröidy",
+      "email": "Sähköposti",
+      "password": "Salasana",
+      "name": "Nimi",
+      "loginSuccess": "✅ Kirjautuminen onnistui!",
+      "signupSuccess": "✅ Rekisteröinti onnistui!",
+      "forgotPassword": "Unohtuiko salasana?",
+      "loginError": "❌ Kirjautumisvirhe",
+      "signupError": "❌ Rekisteröintivirhe",
+      "error": "Tapahtui virhe",
+      "success": "Toiminto onnistui",
+      "forgotTitle": "Unohtuiko salasana?",
+      "sendResetLink": "Lähetä palautuslinkki",
+      "resetTitle": "🔐 Aseta uusi salasana",
+      "newPassword": "Uusi salasana",
+      "confirmPassword": "Vahvista salasana",
+      "changePassword": "Vaihda salasana",
+      "passwordMismatch": "Salasanat eivät täsmää.",
+      
+      "resetError": "❌ Salasanan vaihto epäonnistui. Yritä uudelleen.",
+      "resetPassword": "Palauta salasana",
+        "checkEmail": "Tarkista sähköpostisi.",
+    "resetSuccess": "Salasana vaihdettu onnistuneesti!",
+    "resetFailed": "Salasanan vaihto epäonnistui."
+    },
+    "reset": {
+      "title": "🔐 Aseta uusi salasana",
+      "placeholder": "Uusi salasana",
+      "button": "Vaihda salasana"
+    },
+    "forgot": {
+      "title": "🔑 Salasanan palautus",
+      "placeholder": "Anna sähköpostisi",
+      "button": "Lähetä palautuslinkki",
+      "sentMessage": "Tarkista sähköpostisi palautuslinkin saamiseksi."
+    },
+  
+  
   "footer": {
     "visitingHours": "Aukioloajat",
     "weekdays": "Ma - Pe: 11:00 - 20:00",
@@ -137,6 +171,16 @@
   "batteryDesc": "Akkusi tyhjenee nopeasti tai ei lataudu kunnolla? Vaihdamme sen uuteen akkuun, joka kestää koko päivän.",
   "backDesc": "Rikkoutunut takalasi? Ei hätää – laadukkaat osat ja siisti viimeistely tekevät puhelimestasi kuin uuden."
 },
+
+  "profile": {
+    "title": "👤 Käyttäjäprofiili",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "phone": "Puhelin",
+    "memberSince": "Jäsenenä alkaen",
+    "loading": "Ladataan profiilia..."
+  },
+
 "cart": {
   "title": "Ostoskorisi",
   "empty": "Ostoskorisi on tyhjä.",
@@ -171,15 +215,21 @@
   
 },
 "bookingForm": {
-  "book": "Varaa",
-  "name": "Nimesi",
+  "book": "Varaa aika",
+  "name": "Nimi",
   "phone": "Puhelinnumero",
-  "email": "Sähköpostiosoite",
+  "email": "Sähköposti",
   "confirm": "Vahvista",
   "close": "Sulje",
+  "selectTime": "Valitse aika",
   "alertFillAll": "Täytä kaikki kentät.",
-  "confirmed": "Varaus vahvistettu palvelulle"
+  "successMessage": "Aikasi on varattu onnistuneesti!",
+  "errorMessage": "Virhe varauksessa. Yritä uudelleen.",
+  "sending": "Lähetetään...",
+  "unavailable": "(ei saatavilla)",
+   "closedWeekend": "Olemme suljettuina lauantaisin ja sunnuntaisin."
 },
+
 
 
   "about": {

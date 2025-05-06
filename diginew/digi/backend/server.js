@@ -4,20 +4,18 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 require('dotenv').config()
 
-const authRoutes = require('./routes/authRoutes')  // 👈 روت auth
-
-
-
+const authRoutes = require('./routes/authRoutes');// 👈 روت auth
+const bookingsRoute = require('./routes/bookings');
+const contactRoutes = require('./routes/contact');
 
 
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-
-app.use('/api/auth', authRoutes)  // 👈 اضافه کردن مسیر
-
+app.use('/api/contact', contactRoutes);
+app.use('/api/auth', authRoutes); // 👈 اضافه کردن مسیر
+app.use('/api/bookings', bookingsRoute);
 app.get('/', (req, res) => {
   res.send('Digi City Backend is running 🎉')
 })

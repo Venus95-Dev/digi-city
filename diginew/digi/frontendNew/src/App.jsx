@@ -30,18 +30,22 @@ import ProfilePage from './components/ProfilePage';
 import { UserProvider } from './context/UserContext';
 import { ToastContainer } from 'react-toastify';
 import SearchResults from './pages/SearchResults';
-
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
 import 'react-toastify/dist/ReactToastify.css';
 
 // مسیرهایی که Footer توشون نباید باشه
 const hideFooterPaths = [
-  '/auth',
+  
   '/checkout',
   '/payment-success/stripe',
   '/payment-success/klarna',
   '/booking',
   '/cart',
   '/profile',
+  '/resetPassword ',
+  '/forgotpassword ',
+  
   
 ];
 
@@ -79,7 +83,8 @@ const AppRoutes = () => {
         <Route path="/test-payment" element={<PaymentForm />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/search" element={<SearchResults />} />
-
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
       </Routes>
       {!hideFooterPaths.includes(location.pathname) && <Footer />}
     </div>

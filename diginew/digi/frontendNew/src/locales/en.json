@@ -13,13 +13,54 @@
     "logout": "Log Out",
     "logoutMessage": "You have been logged out!"
   },
-  "auth": {
-  "login": "Login",
-  "signup": "Sign Up",
-  "email": "Email",
-  "password": "Password",
-  "name": "Full Name"
-},
+  
+  
+    "auth": {
+      "login": "Login",
+      "signup": "Sign Up",
+      "email": "Email",
+      "password": "Password",
+      "name": "Name",
+      "loginSuccess": "✅ Logged in successfully!",
+      "signupSuccess": "✅ Registration successful!",
+      "forgotPassword": "Forgot password?",
+      "loginError": "❌ Login failed",
+      "signupError": "❌ Signup failed",
+      "error": "An error occurred",
+      "success": "Success",
+      "forgotTitle": "Forgot your password?",
+      "sendResetLink": "Send Reset Link",
+      "resetTitle": "🔐 Set a New Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "changePassword": "Change Password",
+      "passwordMismatch": "Passwords do not match.",
+ 
+      "resetError": "❌ Failed to reset password. Try again later.",
+     
+       "resetPassword": "Reset Password",
+    
+    "checkEmail": "Please check your email.",
+   
+    "resetSuccess": "Password reset successfully!",
+    "resetFailed": "Password reset failed."
+      
+    },
+    "reset": {
+      "title": "🔐 Set New Password",
+      "placeholder": "New Password",
+      "button": "Change Password"
+    },
+    "forgot": {
+      "title": "🔑 Password Recovery",
+      "placeholder": "Enter your email",
+      "button": "Send Reset Link",
+      "sentMessage": "Please check your email for the reset link."
+    },
+  
+  
+
+  
 
   "footer": {
     "visitingHours": "Visiting Hours",
@@ -174,12 +215,29 @@
   "book": "Book",
   "name": "Your Name",
   "phone": "Phone Number",
-  "email": "Email address",
+  "email": "Email Address",
   "confirm": "Confirm",
   "close": "Close",
+  "selectTime": "Select Time",
   "alertFillAll": "Please fill in all fields.",
-  "confirmed": "Booking confirmed for"
+  "successMessage": "Your booking was successful!",
+  "errorMessage": "Booking failed. Please try again.",
+  "sending": "Sending...",
+  "unavailable": "(unavailable)",
+  "closedWeekend": "We are closed on Saturdays and Sundays."
 },
+
+  "profile": {
+    "title": "👤 User Profile",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "memberSince": "Member Since",
+    "loading": "Loading profile..."
+  },
+
+
+
 
 
   "about": {
